@@ -1,0 +1,6 @@
+.button-demarche:hover {
+    background-color: var(--tertiaire2); /* Remplacez par la couleur de fond souhaitée */
+    color: var(--secondaire2); /* Facultatif : couleur de texte souhaitée au survol */
+  }
+
+  

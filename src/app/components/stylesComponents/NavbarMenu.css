@@ -1,0 +1,86 @@
+/* NavbarLogo.css */
+
+/* Container principal de la barre de navigation */
+.navbar-container {
+    display: flex;
+    flex-grow: 1;
+  }
+  
+  /* Logo sur la version desktop */
+  .navbar-logo-desktop {
+    margin-right: 16px;
+    display: none;
+    font-family: 'monospace';
+    font-weight: 700;
+    letter-spacing: 0.3rem;
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  /* Logo sur la version mobile */
+  .navbar-logo-mobile {
+    margin-right: 16px;
+    display: flex;
+    flex-grow: 1;
+    font-family: 'monospace';
+    font-weight: 700;
+    letter-spacing: 0.3rem;
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  /* Afficher le logo desktop sur des écrans larges */
+  @media (min-width: 600px) {
+    .navbar-logo-desktop {
+      display: flex;
+    }
+  }
+  
+  /* Afficher le logo mobile sur des petits écrans */
+  @media (max-width: 600px) {
+    .navbar-logo-mobile {
+      display: block;
+    }
+  }
+  
+  /* Pour la zone qui occupe l'espace restant */
+  .navbar-flex-grow {
+    flex-grow: 1;
+    display: none;
+  }
+  
+  /* Pour le menu utilisateur */
+  .navbar-user-menu {
+    flex-grow: 0;
+  }
+  
+  /* Texte du bouton d'icône utilisateur */
+  .navbar-text {
+    margin-left: 8px;
+    font-size: 14px;
+  }
+  
+  /* Style pour l'icône du logo */
+  .icon-logo {
+    font-size: 24px;
+  }
+  
+  /* NavbarLogo.css */
+
+.company-logo {
+    width: auto; /* Conserver les proportions du logo */
+    height: 50px; /* Ajuster la hauteur du logo pour le rendre plus petit ou plus grand */
+  }
+  
+  @media (max-width: 600px) {
+    .company-logo {
+      height: 40px; /* Réduire la taille du logo sur les petits écrans */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .company-logo {
+      height: 45px; /* Ajuster la taille du logo pour les écrans moyens */
+    }
+  }
+  
